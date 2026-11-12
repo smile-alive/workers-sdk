@@ -8,6 +8,7 @@ import {
 	formatZodError,
 	getCloudflareComplianceRegion,
 } from "@cloudflare/workers-utils";
+import { toApiComplianceRegion } from "@cloudflare/workers-utils/compliance";
 import {
 	convertV4MiniflareOptions,
 	kCurrentWorker,
@@ -38,7 +39,6 @@ import {
 	loadNewConfig,
 	mergeCloudflareConfigWorker,
 	NEW_CONFIG_FILENAME,
-	toApiComplianceRegion,
 } from "./new-config";
 import type { LoadedNewConfig } from "./new-config";
 import type {
