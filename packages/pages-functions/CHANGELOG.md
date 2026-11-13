@@ -1,5 +1,13 @@
 # @cloudflare/pages-functions
 
+## 0.1.9
+
+### Patch Changes
+
+- [#16849](https://github.com/cloudflare/workers-sdk/pull/16849) [`3cea40b`](https://github.com/cloudflare/workers-sdk/commit/3cea40b078519222db432b5edf827ddc3e629a2a) Thanks [@dependabot](https://github.com/apps/dependabot)! - Update `DEFAULT_COMPAT_DATE` to 2026-11-12
+
+  Use the bundled workerd release's compatibility date by default when scaffolding new projects or when no compatibility date is configured.
+
 ## 0.1.8
 
 ### Patch Changes

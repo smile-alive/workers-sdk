@@ -1,5 +1,29 @@
 # wrangler
 
+## 4.161.1
+
+### Patch Changes
+
+- [#16849](https://github.com/cloudflare/workers-sdk/pull/16849) [`3cea40b`](https://github.com/cloudflare/workers-sdk/commit/3cea40b078519222db432b5edf827ddc3e629a2a) Thanks [@dependabot](https://github.com/apps/dependabot)! - Update `DEFAULT_COMPAT_DATE` to 2026-11-12
+
+  Use the bundled workerd release's compatibility date by default when scaffolding new projects or when no compatibility date is configured.
+
+- [#16849](https://github.com/cloudflare/workers-sdk/pull/16849) [`3cea40b`](https://github.com/cloudflare/workers-sdk/commit/3cea40b078519222db432b5edf827ddc3e629a2a) Thanks [@dependabot](https://github.com/apps/dependabot)! - Update dependencies of "miniflare", "wrangler"
+
+  The following dependency versions have been updated:
+
+  | Dependency                | From          | To            |
+  | ------------------------- | ------------- | ------------- |
+  | @cloudflare/workers-types | ^5.20261110.1 | ^5.20261112.1 |
+  | workerd                   | 1.20261110.1  | 1.20261112.1  |
+
+- [#16862](https://github.com/cloudflare/workers-sdk/pull/16862) [`c889551`](https://github.com/cloudflare/workers-sdk/commit/c889551b0c1b66e5744ba891e207e4283ed3b5a5) Thanks [@petebacondarwin](https://github.com/petebacondarwin)! - Fix requests hanging when a local Worker reload finishes before an inflight request fails
+
+  Wrangler now immediately processes retriable requests when the replacement Worker is already ready. Previously, these requests could remain queued until another request arrived, particularly on Windows where connection failures can take longer to report.
+
+- Updated dependencies [[`61eacca`](https://github.com/cloudflare/workers-sdk/commit/61eacca214a9533f41fac98d732f1cfdd905ddf6), [`856842e`](https://github.com/cloudflare/workers-sdk/commit/856842ec973ddd530dd385d389d68408f8ce58e2), [`856842e`](https://github.com/cloudflare/workers-sdk/commit/856842ec973ddd530dd385d389d68408f8ce58e2), [`3cea40b`](https://github.com/cloudflare/workers-sdk/commit/3cea40b078519222db432b5edf827ddc3e629a2a), [`3cea40b`](https://github.com/cloudflare/workers-sdk/commit/3cea40b078519222db432b5edf827ddc3e629a2a)]:
+  - miniflare@5.20261112.0-beta
+
 ## 4.161.0
 
 ### Minor Changes
